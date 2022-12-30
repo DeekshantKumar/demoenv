@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'category',
+    'accounts',
 
 ]
 
@@ -70,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'gk.wsgi.application'
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
