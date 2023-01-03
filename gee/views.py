@@ -10,9 +10,9 @@ from folium import plugins
 
 
 #gee
-import gee
+import ee
 
-gee.Initialize()
+ee.Initialize()
 
 
 #home
@@ -35,8 +35,8 @@ class home(TemplateView):
 
         
         #select the Dataset Here's used the MODIS data
-        dataset = (gee.ImageCollection('MODIS/006/MOD13Q1')
-                  .filter(gee.Filter.date('2019-07-01', '2019-11-30'))
+        dataset = (ee.ImageCollection('MODIS/006/MOD13Q1')
+                  .filter(ee.Filter.date('2019-07-01', '2019-11-30'))
                   .first())
         modisndvi = dataset.select('NDVI')
 
@@ -48,7 +48,7 @@ class home(TemplateView):
 
         
         #add the map to the the folium map
-        map_id_dict = gee.Image(modisndvi).getMapId(vis_paramsNDVI)
+        map_id_dict = ee.Image(modisndvi).getMapId(vis_paramsNDVI)
        
         #GEE raster data to TileLayer
         folium.raster_layers.TileLayer(
