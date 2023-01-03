@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'category',
     'accounts',
+    'gee',
 
 ]
 
@@ -116,6 +117,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+GOOGLE_MAPS_API_KEY='AIzaSyB7Fnfo1BDtan27XP5CV1ctAbOBX6GNPNw'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
