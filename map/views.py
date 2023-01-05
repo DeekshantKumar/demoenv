@@ -14,4 +14,4 @@ def map(request):
     context = {
         'key':key,
     }
-    return render(request, 'index.html',context)
+    return render(request, 'mapgeo.html',context)
