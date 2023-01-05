@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': str(os.path.join(BASE_DIR / "db.sqlite3")),
     }
 }
-GOOGLE_API_KEY = 'AIzaSyBKnKat6PujD99Fl7HVqfSsKEB6HWauOf8'
+GOOGLE_API_KEY = 'AIzaSyDr5JKt-vOMOtWcw96tZvlSM3RJxaVTan4'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
