@@ -14,4 +14,4 @@ def map(request):
     context = {
         'key':key,
     }
-    return render(request, 'google/map.html',context)
+    return render(request, 'templates/index.html',context)
